@@ -7,7 +7,7 @@ function NavBar() {
         StaffTrack
       </a>
 
-      <ul className="flex justify-around w-full">
+      <ul className=" justify-around w-full hidden md:flex">
         <li className="cursor-pointer hover:font-bold transition-all hover:scale-110 font-semibold">
           Home
         </li>

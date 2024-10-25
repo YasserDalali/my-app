@@ -1,3 +1,4 @@
+import BentoGrid from "./components/BentoGrid";
 import Functionalities from "./components/Functionalities";
 import Hero from "./components/Hero";
 import Intro from "./components/Intro";
@@ -9,11 +10,7 @@ function App() {
     <main className=" min-h-screen overflow-hidden">
       <NavBar />
       <Hero />
-
-      <section>
-        <Intro></Intro>
-      </section>
-      <section className="grid grid-cols-3 gap-5  mx-20 py-20">
+      <section className="grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 lg:gap-3  lg:mx-10 py-20">
         <SectionProduct
           title="TRACK ATTENDENCE"
           img="https://www.sage.com/en-gb/-/media/images/sagedotcom/master/icons/spot%20icons%20over%20light/employees.svg?iar=0&hash=1BF8C4F5B7A833119C14BA59B0054620"
@@ -36,10 +33,17 @@ function App() {
         />
       </section>
 
+<BentoGrid/>
+
+      <section>
+        <Intro></Intro>
+      </section>
+
+
 
 
       <section>
-        <Functionalities></Functionalities>
+        <Functionalities className="lg:padding"></Functionalities>
       </section>
     </main>
   );

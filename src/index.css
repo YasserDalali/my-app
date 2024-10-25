@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .padding {
-    @apply px-36 py-20
+    @apply px-36 py-24
 }
 
 body {

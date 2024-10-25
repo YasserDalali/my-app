@@ -7,12 +7,13 @@ function Functionalities() {
   const [selectedFunc, setSelectedFunc] = React.useState(func1);
 
   return (
-    <div className="relative padding bg-slate-900 text-white">
+    <div className="relative p-10 lg:padding bg-slate-900 text-white">
+
       <p className="text-5xl text-center font-bold">Functionalities</p>
-      <ul className="flex justify-around mx-48  my-10">
+
+      <ul className="flex justify-around lg:mx-48  my-10">
         <li
-        
-          className={`rounded-full border p-2 w-32 text-center cursor-pointer hover:font-bold transition-all hover:scale-110 font-semibold ${
+          className={`rounded-full border p-2 w-full mx-3 lg:w-full lg:p-2 text-center cursor-pointer hover:font-bold transition-all hover:scale-110 font-semibold ${
             selectedFunc === func1 ? "grad-main-text bg-grad-main border-green-500  " : ""}`}
           onClick={() => {
             setSelectedFunc(func1);
@@ -22,7 +23,7 @@ function Functionalities() {
         </li>
 {/* ------------------------------ */}
         <li
-          className={`rounded-full border p-2 w-32 text-center cursor-pointer hover:font-bold transition-all hover:scale-110 font-semibold ${
+          className={`rounded-full border p-2 w-full mx-2 lg:w-full lg:p-2 text-center cursor-pointer hover:font-bold transition-all hover:scale-110 font-semibold ${
             selectedFunc === func2 ? "grad-main-text  bg-grad-main border-green-500 " : ""}`}
           onClick={() => {
             setSelectedFunc(func2);
@@ -33,7 +34,7 @@ function Functionalities() {
 {/* ------------------------------ */}
 
         <li
-          className={`rounded-full border p-2 w-32 text-center cursor-pointer hover:font-bold transition-all hover:scale-110 font-semibold ${
+          className={`rounded-full border p-2 w-full mx-2 lg:w-full lg:p-2 text-center cursor-pointer hover:font-bold transition-all hover:scale-110 font-semibold ${
             selectedFunc === func3 ? "grad-main-text u bg-grad-main border-green-500" : ""}`}
           onClick={() => {
             setSelectedFunc(func3);
@@ -44,6 +45,7 @@ function Functionalities() {
 
         
       </ul>
+     
       <div className="">
         <Func1 func={selectedFunc} />
       </div>
