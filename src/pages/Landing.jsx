@@ -1,10 +1,10 @@
 import React from 'react'
-import BentoGrid from "../components/BentoGrid";
-import Functionalities from "../components/Functionalities";
-import Hero from "../components/Hero";
-import Intro from "../components/Intro";
-import NavBar from "../components/NavBar";
-import SectionProduct from "../components/SectionProduct";
+import BentoGrid from "../components/old/BentoGrid";
+import Functionalities from "../components/old/Functionalities";
+import Hero from "../components/old/Hero";
+import Intro from "../components/old/Intro";
+import NavBar from "../components/old/NavBar";
+import SectionProduct from "../components/old/SectionProduct";
 
 function Landing() {
     return (
